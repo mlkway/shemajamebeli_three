@@ -1,0 +1,2 @@
+rootProject.name = "tbc_shemajamebeli_three"
+include ':app'
