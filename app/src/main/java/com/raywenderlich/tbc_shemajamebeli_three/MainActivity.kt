@@ -3,6 +3,7 @@ package com.raywenderlich.tbc_shemajamebeli_three
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.raywenderlich.tbc_shemajamebeli_three.databinding.ActivityMainBinding
@@ -58,6 +59,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
+
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -68,6 +70,8 @@ class MainActivity : AppCompatActivity() {
 
             customerList.set(currentPosition,customer!!)
             adapter.notifyItemChanged(currentPosition)
+        }else{
+            Toast.makeText(this,"nothing will change", Toast.LENGTH_SHORT).show()
         }
 
 
