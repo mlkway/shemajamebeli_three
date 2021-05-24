@@ -48,7 +48,7 @@ class MyAdapter
 
          fun bind(){
 
-             nameText.text = data[adapterPosition].nmae
+             nameText.text = data[adapterPosition].name
              lastNameText.text = data[adapterPosition].lastName
              email.text = data[adapterPosition].email
              deleteItem.setOnClickListener(this)
